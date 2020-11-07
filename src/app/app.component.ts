@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primeng-fileupload-demo';
+
+  upload(event: any): void {
+    alert(JSON.stringify(event, null, 2));
+  }
 }
